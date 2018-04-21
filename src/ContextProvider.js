@@ -3,7 +3,7 @@ import Context from './ContextDefinition'
 
 class ContextProvider extends Component {
   state = {
-    wordState: 'words',
+    wordState: 'Hello from Provider',
     updateContext: (val) => this.updateContext(val)
   }
 

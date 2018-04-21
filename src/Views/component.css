@@ -1,0 +1,67 @@
+.First-Layer {
+  height: 100%;
+  width: 100%;
+}
+
+.First-Layer-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.First-Layer-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.First-Layer-Body-container { 
+  display: flex;
+
+}
+
+.First-Layer-title {
+  font-size: 1.5em;
+}
+
+.First-Layer-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.Text {
+  margin: 20;
+}
+
+.Second-Layer {
+  align-items: center;
+  background: lightblue;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw;
+}
+
+.Second-Layer-textContainer {
+  height: 100px;
+  width: 100px;
+}
+
+.Third-Layer-container {
+  display: flex;
+  align-items: center;
+  background: lightgray;
+  justify-content: center;
+  height: 75%;
+  width: 75%;
+}
+
+.Fourth-Layer-container {
+  background: lightcyan;
+  height: 75%;
+  width: 75%;
+}
