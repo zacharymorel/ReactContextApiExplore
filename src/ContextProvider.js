@@ -4,12 +4,15 @@ import Context from './ContextDefinition'
 class ContextProvider extends Component {
   state = {
     wordState: 'Hello from Provider',
-    updateContext: (e) => this.updateContext(e)
+    handleInputChange: (e) => this.handleInputChange(e),
+    handleInputSubmit: (e) => this.handleInputSubmit(e)
   }
 
-  updateContext = (e) => {
-    // console.log(e.target.value);
-    this.setState({ wordState: e.target.value })
+  handleInputChange = (e) => ( this.setState({wordState: e.target.value}) )
+
+  handleInputSubmit = (e) => {
+    console.log('DO SOME Fancy Submit Stuff');    
+    e.preventDefault();
   }
 
   render() {
