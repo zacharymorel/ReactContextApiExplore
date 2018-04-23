@@ -4,11 +4,12 @@ import Context from './ContextDefinition'
 class ContextProvider extends Component {
   state = {
     wordState: 'Hello from Provider',
-    updateContext: (val) => this.updateContext(val)
+    updateContext: (e) => this.updateContext(e)
   }
 
-  updateContext = (val) => {
-    this.setState({ wordState: val })
+  updateContext = (e) => {
+    // console.log(e.target.value);
+    this.setState({ wordState: e.target.value })
   }
 
   render() {
